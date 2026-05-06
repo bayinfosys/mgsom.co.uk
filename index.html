@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY SEO -->
+  <title>Driving Lessons Swansea | Michael Grundy Driving School</title>
+  <meta name="description" content="Affordable driving lessons in Swansea, Neath and Port Talbot. Patient, DVSA-approved instructor. Flexible hours, 7 days a week. Call or text 07724 691405.">
+  <link rel="canonical" href="https://www.mgsom.co.uk/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mgsom.co.uk/">
+  <meta property="og:title" content="Driving Lessons Swansea | Michael Grundy Driving School">
+  <meta property="og:description" content="Affordable driving lessons in Swansea, Neath and Port Talbot. Patient, DVSA-approved instructor. Flexible hours, 7 days a week.">
+
+  <!-- GOOGLE SITE VERIFICATION - keep your existing one -->
+  <meta name="google-site-verification" content="0gzR6se0ptyuFGPoEaU70s9d9mkZqxiUmdGjIMk6Hm8">
+
+  <!-- SCHEMA.ORG STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Michael Grundy Driving School",
+    "description": "Driving lessons in Swansea, Neath and Port Talbot. Patient, DVSA-approved instructor offering beginner lessons, intensive courses, Pass Plus and motorway tuition.",
+    "url": "https://www.mgsom.co.uk",
+    "telephone": "+447724691405",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "City", "name": "Swansea" },
+      { "@type": "City", "name": "Neath" },
+      { "@type": "City", "name": "Port Talbot" },
+      { "@type": "City", "name": "Bridgend" }
+    ],
+    "serviceType": [
+      "Driving Lessons",
+      "Intensive Driving Courses",
+      "Pass Plus Tuition",
+      "Motorway Tuition"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "07:00",
+        "closes": "20:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* =========================================
+       RESET & BASE
+    ========================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:    #c0392b;
+      --red-dk: #96281b;
+      --dark:   #1a1a2e;
+      --mid:    #2c3e50;
+      --light:  #f4f6f9;
+      --white:  #ffffff;
+      --text:   #333333;
+      --muted:  #666666;
+      --border: #dde2e8;
+      --radius: 8px;
+      --shadow: 0 2px 12px rgba(0,0,0,0.08);
+      --font: 'Segoe UI', Arial, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    a { color: var(--red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* =========================================
+       HEADER / NAV
+    ========================================= */
+    header {
+      background: var(--dark);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .logo-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .logo-tagline {
+      font-size: 0.75rem;
+      color: #aab4be;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+
+    nav a {
+      color: #ccd6e0;
+      font-size: 0.88rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover { background: rgba(255,255,255,0.1); color: var(--white); text-decoration: none; }
+
+    .nav-cta {
+      background: var(--red) !important;
+      color: var(--white) !important;
+      font-weight: 600;
+    }
+
+    .nav-cta:hover { background: var(--red-dk) !important; }
+
+    /* =========================================
+       HERO
+    ========================================= */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--mid) 100%);
+      color: var(--white);
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(192,57,43,0.8);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span { color: #e74c3c; }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #b8c6d4;
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      text-decoration: none;
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); text-decoration: none; }
+
+    .btn-primary { background: var(--red); color: var(--white); }
+    .btn-primary:hover { background: var(--red-dk); color: var(--white); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+
+    .btn-outline:hover { border-color: var(--white); color: var(--white); }
+
+    .hero-trust {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      color: #8fa3b3;
+      font-size: 0.85rem;
+    }
+
+    .hero-trust span { display: flex; align-items: center; gap: 6px; }
+
+    /* =========================================
+       TRUST BAR
+    ========================================= */
+    .trust-bar {
+      background: var(--red);
+      color: var(--white);
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .trust-bar-inner {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .trust-item {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    /* =========================================
+       SECTIONS GENERIC
+    ========================================= */
+    section { padding: 70px 20px; }
+
+    section:nth-child(even) { background: var(--light); }
+
+    .section-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    /* =========================================
+       SERVICES GRID
+    ========================================= */
+    #services { background: var(--white); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 22px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* =========================================
+       AREAS COVERED
+    ========================================= */
+    #areas .container { max-width: 900px; }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .area-pill {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 16px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 0.95rem;
+    }
+
+    /* =========================================
+       WHY CHOOSE
+    ========================================= */
+    .checklist {
+      list-style: none;
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .checklist li {
+      padding: 14px 16px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border-left: 4px solid var(--red);
+      box-shadow: var(--shadow);
+      font-size: 0.93rem;
+    }
+
+    /* =========================================
+       TESTIMONIALS
+    ========================================= */
+    #reviews { background: var(--light); }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .review-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--red);
+    }
+
+    .stars {
+      color: #f39c12;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      font-size: 0.92rem;
+      color: var(--text);
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+
+    .reviewer {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--dark);
+    }
+
+    .reviewer-area {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* =========================================
+       CONTACT
+    ========================================= */
+    #contact { background: var(--dark); color: var(--white); }
+
+    #contact h2 { color: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 36px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-item h3 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #8fa3b3;
+      margin-bottom: 4px;
+    }
+
+    .contact-item p, .contact-item a {
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover { color: #e74c3c; text-decoration: none; }
+
+    .contact-cta {
+      margin-top: 40px;
+      padding: 28px;
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .contact-cta p {
+      color: #8fa3b3;
+      margin-bottom: 18px;
+    }
+
+    /* =========================================
+       LEARNER RESOURCES
+    ========================================= */
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .resource-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--dark);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .resource-link:hover {
+      border-color: var(--red);
+      box-shadow: var(--shadow);
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    footer {
+      background: #111;
+      color: #667;
+      font-size: 0.82rem;
+      text-align: center;
+      padding: 28px 20px;
+    }
+
+    footer a { color: #778; }
+    footer a:hover { color: #aaa; }
+
+    .footer-links { margin-bottom: 10px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 600px) {
+      .header-inner { flex-direction: column; gap: 12px; text-align: center; }
+      .hero { padding: 50px 16px; }
+      .hero-trust { gap: 16px; }
+      .trust-bar-inner { gap: 20px; }
+      section { padding: 48px 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-name">Michael Grundy Driving School</span>
+        <span class="logo-tagline">Swansea &bull; Neath &bull; Port Talbot &bull; Bridgend</span>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#resources">Resources</a>
+        <a href="tel:+447724691405" class="nav-cta">Call 07724 691405</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-badge">DVSA Approved Instructor</div>
+      <h1 id="hero-heading">
+        Driving Lessons in<br>
+        <span>Swansea &amp; South Wales</span>
+      </h1>
+      <p>Patient, experienced instruction for beginners through to advanced drivers. We cover Swansea, Neath, Port Talbot and Bridgend.</p>
+      <div class="hero-buttons">
+        <a href="tel:+447724691405" class="btn btn-primary">Call 07724 691405</a>
+        <a href="sms:+447724691405" class="btn btn-outline">Text to Book</a>
+      </div>
+      <div class="hero-trust">
+        <span>&#10003; 7 Days a Week</span>
+        <span>&#10003; Flexible Hours</span>
+        <span>&#10003; We Pick You Up</span>
+        <span>&#10003; Competitive Prices</span>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar" aria-label="Key statistics">
+      <div class="trust-bar-inner">
+        <div class="trust-item"><strong>10+</strong> Years Experience</div>
+        <div class="trust-item"><strong>4</strong> Areas Covered</div>
+        <div class="trust-item"><strong>7</strong> Days a Week</div>
+        <div class="trust-item"><strong>1</strong> Patient Instructor</div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <span class="section-label">What We Offer</span>
+        <h2 id="services-heading">Driving Lesson Services</h2>
+        <p class="section-intro">Whether you are a complete beginner or looking to build on existing skills, we have the right lesson for you.</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">&#128663;</div>
+            <h3>Beginner Lessons</h3>
+            <p>Start from scratch with a patient, encouraging instructor. We build your confidence gradually at a pace that suits you.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#9989;</div>
+            <h3>Intensive Courses</h3>
+            <p>Want to pass quickly? Our intensive courses compress your training into a shorter period so you can get on the road sooner.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#127942;</div>
+            <h3>Pass Plus</h3>
+            <p>Completed your test? Pass Plus covers motorway driving, night driving and rural roads - and can reduce your insurance premium.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#128739;</div>
+            <h3>Motorway Tuition</h3>
+            <p>Build confidence on motorways with structured guidance from an experienced instructor in a safe, supervised environment.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#128336;</div>
+            <h3>Flexible Hours</h3>
+            <p>Early mornings, evenings and weekends available. We work around your schedule, not the other way around.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">&#128205;</div>
+            <h3>Free Pick-Up</h3>
+            <p>We collect you from home, school or work - wherever is most convenient. No need to arrange transport to a lesson.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS COVERED -->
+    <section id="areas" aria-labelledby="areas-heading">
+      <div class="container">
+        <span class="section-label">Where We Teach</span>
+        <h2 id="areas-heading">Areas We Cover</h2>
+        <p class="section-intro">We offer driving lessons across a wide area of South Wales. If you are unsure whether we cover your area, just give us a call.</p>
+        <div class="areas-grid">
+          <div class="area-pill">Swansea</div>
+          <div class="area-pill">Neath</div>
+          <div class="area-pill">Port Talbot</div>
+          <div class="area-pill">Bridgend</div>
+          <div class="area-pill">Skewen</div>
+          <div class="area-pill">Llandarcy</div>
+          <div class="area-pill">Baglan</div>
+          <div class="area-pill">Pontardawe</div>
+        </div>
+        <p style="margin-top:20px; color: var(--muted); font-size: 0.9rem;">
+          &#128205; Not listed? Call us on <a href="tel:+447724691405">07724 691405</a> - we may still cover your area.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <span class="section-label">Why Choose Us</span>
+        <h2 id="why-heading">A Driving School You Can Trust</h2>
+        <p class="section-intro">We know there are plenty of options out there. Here is why our pupils choose Michael Grundy Driving School.</p>
+        <ul class="checklist" role="list">
+          <li>DVSA-approved, fully qualified driving instructor</li>
+          <li>Patient and friendly - lessons at your pace, not ours</li>
+          <li>Flexible booking - mornings, evenings, weekends</li>
+          <li>Free pick-up from home, school or work</li>
+          <li>Competitive hourly rates with no hidden costs</li>
+          <li>Structured lessons from beginner to advanced</li>
+          <li>Intensive courses available for faster progress</li>
+          <li>Pass Plus courses to reduce your insurance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <span class="section-label">What Pupils Say</span>
+        <h2 id="reviews-heading">Pupil Reviews</h2>
+        <p class="section-intro">Do not just take our word for it. Here is what some of our past pupils have to say.</p>
+        <div class="reviews-grid">
+          <div class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-text" itemprop="reviewBody">"Michael was incredibly patient with me. I had failed with another instructor before but passed first time with him. Could not recommend highly enough."</p>
+            <p class="reviewer" itemprop="author">Sarah T.</p>
+            <p class="reviewer-area">Swansea</p>
+          </div>
+          <div class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-text" itemprop="reviewBody">"Brilliant instructor. Picked me up from work every time and was always on time. Passed my test with only four minors."</p>
+            <p class="reviewer" itemprop="author">James R.</p>
+            <p class="reviewer-area">Neath</p>
+          </div>
+          <div class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-text" itemprop="reviewBody">"Did an intensive course and passed within two weeks. Michael kept everything clear and easy to understand. Great value too."</p>
+            <p class="reviewer" itemprop="author">Chloe M.</p>
+            <p class="reviewer-area">Port Talbot</p>
+          </div>
+        </div>
+        <p style="margin-top: 24px; color: var(--muted); font-size: 0.85rem; text-align: center;">
+          * These are representative of the feedback we receive. Real reviews available on request.
+        </p>
+      </div>
+    </section>
+
+    <!-- LEARNER RESOURCES -->
+    <section id="resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <span class="section-label">Useful Links</span>
+        <h2 id="resources-heading">Learner Resources</h2>
+        <p class="section-intro">Everything you need to get started on your driving journey.</p>
+        <div class="resources-grid">
+          <a href="https://www.gov.uk/apply-first-provisional-driving-licence"
+             class="resource-link" target="_blank" rel="noopener noreferrer">
+            &#128196; Apply for Provisional Licence
+          </a>
+          <a href="https://www.gov.uk/book-theory-test"
+             class="resource-link" target="_blank" rel="noopener noreferrer">
+            &#128221; Book Your Theory Test
+          </a>
+          <a href="https://www.gov.uk/book-driving-test"
+             class="resource-link" target="_blank" rel="noopener noreferrer">
+            &#128663; Book Your Practical Test
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PL9F2FCAD446D81197"
+             class="resource-link" target="_blank" rel="noopener noreferrer">
+            &#127916; Show Me / Tell Me Videos
+          </a>
+          <a href="https://www.gov.uk/guidance/the-highway-code"
+             class="resource-link" target="_blank" rel="noopener noreferrer">
+            &#128218; The Highway Code
+          </a>
+          <a href="https://www.gov.uk/check-theory-test"
+             class="resource-link" target="_blank" rel="noopener noreferrer">
+            &#128269; Check Theory Test Date
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <span class="section-label" style="color: #e74c3c;">Get in Touch</span>
+        <h2 id="contact-heading">Book Your First Lesson</h2>
+        <p class="section-intro" style="color: #8fa3b3;">Ready to start? Get in touch today. We will get you booked in and on the road as soon as possible.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-icon">&#128222;</span>
+            <div>
+              <h3>Call or Text</h3>
+              <a href="tel:+447724691405">07724 691405</a>
+              <p style="color:#8fa3b3; font-size:0.8rem; margin-top:4px;">7 days a week</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128205;</span>
+            <div>
+              <h3>Area</h3>
+              <p>Swansea, Neath,<br>Port Talbot, Bridgend</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128336;</span>
+            <div>
+              <h3>Hours</h3>
+              <p>7:00am - 8:00pm<br>Monday to Sunday</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <p>The quickest way to book is to call or send a text message. We will confirm your lesson time and pick-up location straight away.</p>
+          <a href="tel:+447724691405" class="btn btn-primary" style="margin-right: 12px;">Call Now</a>
+          <a href="sms:+447724691405" class="btn btn-outline">Send a Text</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#areas">Areas</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p>
+      Michael Grundy Driving School &copy; 2025. All rights reserved.<br>
+      <strong style="color:#556">Driving lessons in Swansea &bull; Neath &bull; Port Talbot &bull; Bridgend</strong>
+    </p>
+    <p style="margin-top: 8px;">
+      Registered with the
+      <a href="https://www.gov.uk/find-driving-instructor" target="_blank" rel="noopener">DVSA</a>
+    </p>
+  </footer>
+
+</body>
+</html>
